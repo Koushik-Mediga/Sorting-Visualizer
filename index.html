@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tilteBox">
+            <h1>SORTING VISUALIZER</h1>
+        </div>
+        <div class="bodyClass">
+            <div class="parameterControls">
+                <div class="parameters">
+                    <p>Length:</p>
+                    <input class="length" type="range" min="10" max="110" value="10" step="20">
+                </div>
+                <div class="parameters">
+                    <p>Speed:</p>
+                    <input class="speed" type="range" min="0" max="10" value="50" step="2">
+                </div>
+            </div>
+            <div class="sortingControls">
+                <div class="sortingAlgoBox">
+                    <button class="sortingAlgoButton initialize">Initialize</button>
+                    <button class="sortingAlgoButton runAll">Run all at a time</button>
+                    <button class="sortingAlgoButton">Step by step</button>
+                </div>
+                <div class="sortingAlgoBox">
+                    <input type="radio" id="bubbleSort" name="sortingAlgo" class="radio-btn" value="bubbleSort">
+                    <label class="sortingAlgoButton" for="bubbleSort">Bubble Sort</label>
+                    <br>
+                    <input type="radio" id="insertionSort" name="sortingAlgo" class="radio-btn" value="insertionSort">
+                    <label class="sortingAlgoButton" for="insertionSort">Insertion Sort</label>
+                    <br>
+                    <input type="radio" id="selectionSort" name="sortingAlgo" class="radio-btn" value="selectionSort">
+                    <label class="sortingAlgoButton" for="selectionSort">Selection Sort</label>
+                    <br>
+                    <input type="radio" id="mergeSort" name="sortingAlgo" class="radio-btn" value="mergeSort">
+                    <label class="sortingAlgoButton" for="mergeSort">Merge Sort</label>
+                    <br>
+                    <input type="radio" id="quickSort" name="sortingAlgo" class="radio-btn" value="quickSort">
+                    <label class="sortingAlgoButton" for="quickSort">Quick Sort</label>
+                </div>                
+            </div>
+            <div class="sortingBox"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
